@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="richnk.png">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Richard<span>NK</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open_Navigation">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close_Navigation">
+                <ul class="primary-nav">
+                    <li class="currentPage"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Content</a></li>
+                    <li class="go-premium-cta"><a href="#" >Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- starting of the hero section -->
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's Nitty &amp; Gritty</p>
+                <h1>A Task App that Doesn't Stink</h1>
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try For free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Watch a video">Watch a Video
+                    </a>
+                </div>
+            </div>
+            <img src="images/illustration.svg"  class="hero-img" alt="illustration">
+        </div>
+    </section>
+    <!-- End of the hero section -->
+
+    <!-- Start of the Middle section -->
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Confetti Explosions Upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaboration</li>
+                <li>Other Awesome Features</li>
+            </ul>
+            <img src="images/holding-phone.jpg" alt="Man Holding an iPhone">
+        </div>
+    </section>
+    <!-- End of the Middle section -->
+
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/guy.png" alt="Person">
+
+                    <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, but PageMaker including versions of Lorem Ipsum.
+                    </blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/guy.png" alt="Person">
+
+                    <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, but PageMaker including versions of Lorem Ipsum.
+                    </blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/guy.png" alt="Person">
+
+                    <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, but PageMaker including versions of Lorem Ipsum.
+                    </blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Please Enter Your Message in This Field"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="send message">
+
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13363.42459494875!2d-117.30383632730279!3d33.23272889747716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc71026fd042fb%3A0x2f0a733e0983c402!2sIvey%20Ranch%20%2F%20Rancho%20Del%20Oro%2C%20Oceanside%2C%20CA!5e0!3m2!1sen!2sus!4v1635494647782!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+<script>
+    const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+    mobileBtn.addEventListener('click', () =>{
+        nav.classList.add('menu-btn');
+    })
+
+    mobileBtnExit.addEventListener('click', () =>{
+        nav.classList.remove('menu-btn');
+    })
+</script>
+
+</body>
+</html>
